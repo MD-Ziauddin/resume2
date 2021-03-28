@@ -1,0 +1,13 @@
+.education {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  &__institute {
+    width: 20%;
+  }
+
+  &__desc {
+    width: 50%;
+  }
+}

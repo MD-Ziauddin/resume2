@@ -1,0 +1,32 @@
+.skill {
+  padding: 10rem;
+  //   background-color: orange;
+  width: 80%;
+  border-radius: 3rem;
+  border: 1px solid $color-secondary-light;
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+  }
+
+  display: flex;
+  justify-content: space-between;
+
+  &__details {
+    ul {
+      list-style: none;
+      font-size: $default-font-size;
+      font-weight: 700;
+      li {
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.nav {
+  &__logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    width: 10rem;
+    & .logo {
+      width: 100%;
+      z-index: 100;
+    }
+  }
+}
