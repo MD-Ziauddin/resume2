@@ -16,12 +16,12 @@
 
   &__details {
     ul {
-      list-style: none;
+      // list-style: none;
       font-size: $default-font-size;
       font-weight: 700;
       li {
         @include respond(phone) {
-          font-size: 2rem;
+          font-size: 1.4rem;
         }
         &:not(:last-child) {
           margin-bottom: 1rem;

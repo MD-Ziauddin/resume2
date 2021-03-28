@@ -11,7 +11,7 @@ const Footer = () => {
         <img src="./img/logo-white.png" alt="Logo" class="logo" />
       </div>
       <div class="footer__craft">
-        <p class="paragraph">Handcrafted by me. 😎</p>
+        <p class="paragraph">Handcrafted by me. 😊</p>
       </div>
       <div class="footer__links">
         <ul>

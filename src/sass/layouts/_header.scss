@@ -16,6 +16,10 @@
     top: 54%;
     left: 47%;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      transform: translate(-45%, -50%);
+    }
   }
 
   &__avatar {
