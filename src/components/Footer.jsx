@@ -6,14 +6,14 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 
 const Footer = () => {
   return (
-    <footer class="footer">
-      <div class="footer__logo">
-        <img src="./img/logo-white.png" alt="Logo" class="logo" />
+    <footer className="footer">
+      <div className="footer__logo">
+        <img src="./img/logo-white.png" alt="Logo" className="logo" />
       </div>
-      <div class="footer__craft">
-        <p class="paragraph">Handcrafted by me. 😊</p>
+      <div className="footer__craft">
+        <p className="paragraph">Handcrafted by me. 😊</p>
       </div>
-      <div class="footer__links">
+      <div className="footer__links">
         <ul>
           <li>
             <a

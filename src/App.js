@@ -5,6 +5,7 @@ import Technical from "./components/Technical";
 import "./sass/main.scss";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import About from "./components/About";
 import Footer from "./components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Technical />
         <Skills />
         <Projects />
+        <About />
         <Footer />
       </main>
     </>

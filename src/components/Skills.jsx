@@ -2,13 +2,13 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section class="section-skills">
-      <div class="u-center-text u-margin-bottom-medium">
-        <h2 class="heading-secondary">Skills</h2>
+    <section className="section-skills">
+      <div className="u-center-text u-margin-bottom-medium">
+        <h2 className="heading-secondary">Skills</h2>
       </div>
 
-      <div class="skill">
-        <div class="skill__details">
+      <div className="skill">
+        <div className="skill__details">
           <ul>
             <li>Time Management</li>
             <li>Communication</li>
@@ -19,7 +19,7 @@ const Skills = () => {
           </ul>
         </div>
 
-        <div class="skill__details">
+        <div className="skill__details">
           <ul>
             <li>Building maintainable and scalable code.</li>
             <li>Participate in architecture design reviews</li>
