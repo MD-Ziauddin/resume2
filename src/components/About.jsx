@@ -1,5 +1,7 @@
 import React from "react";
 
+import profilePic from "../img/photo.jpg";
+
 const About = () => {
   return (
     <section className="section-about">
@@ -9,7 +11,7 @@ const About = () => {
 
       <div className="about">
         <figure className="about__shape">
-          <img src="./img/photo.jpg" alt="About img" className="about__image" />
+          <img src={profilePic} alt="About img" className="about__image" />
         </figure>
         <div className="about__text">
           <p className="paragraph">

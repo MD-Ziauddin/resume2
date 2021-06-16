@@ -1,16 +1,19 @@
 import React from "react";
 
+import logo from "../img/logo-black.png";
+import profilePic from "../img/photo.jpg";
+
 const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
         <div className="nav__logo">
-          <img src="./img/logo-black.png" alt="" class="logo" />
+          <img src={logo} alt="" class="logo" />
         </div>
       </nav>
       <div className="header__box">
         <img
-          src="./img/photo.jpg"
+          src={profilePic}
           alt="Profile pic"
           className="header__avatar u-margin-bottom-small"
         />

@@ -1,5 +1,9 @@
 import React from "react";
 
+import organic from "../img/organic.png";
+import expenseTracker from "../img/expense.png";
+import musicPlayer from "../img/reactMusicPlayer.png";
+
 const Projects = () => {
   return (
     <section className="section-projects">
@@ -8,17 +12,11 @@ const Projects = () => {
       </div>
       <div className="projects">
         <div className="project project--1">
-          <img
-            src="./img/spotify.png"
-            alt="project"
-            className="project__image"
-          />
+          <img src={organic} alt="project" className="project__image" />
           <div className="project__info">
-            <h3 className="heading-tertiary u-margin-bottom-medium">
-              Spotify Clone
-            </h3>
+            <h3 className="heading-tertiary u-margin-bottom-medium">Organic</h3>
             <a
-              href="https://github.com/MD-Ziauddin/spotify-clone"
+              href="https://md-ziauddin.github.io/Mauka-task-assesment/"
               target="_blank"
               rel="noreferrer"
               className="btn btn--white"
@@ -29,11 +27,7 @@ const Projects = () => {
         </div>
 
         <div className="project project--2">
-          <img
-            src="./img/expense.png"
-            alt="project"
-            className="project__image"
-          />
+          <img src={expenseTracker} alt="project" className="project__image" />
           <div className="project__info">
             <h3 className="heading-tertiary u-margin-bottom-medium">
               Expense Tracker
@@ -50,17 +44,13 @@ const Projects = () => {
         </div>
 
         <div className="project project--3">
-          <img
-            src="./img/crowdfund.jpg"
-            alt="project"
-            className="project__image"
-          />
+          <img src={musicPlayer} alt="project" className="project__image" />
           <div className="project__info">
             <h3 className="heading-tertiary u-margin-bottom-medium">
-              Crowd Funding
+              React Music Player
             </h3>
             <a
-              href="https://github.com/MD-Ziauddin/CrowdFundingPage"
+              href="https://md-ziauddin.github.io/React-Music-Player/"
               target="_blank"
               rel="noreferrer"
               className="btn btn--white"
