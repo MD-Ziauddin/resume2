@@ -1,12 +1,147 @@
-.nav {
-  &__logo {
+.nav2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: red;
+  width: 100%;
+  height: 450px;
+  //   overflow: hidden;
+
+  padding-top: 10rem;
+
+  transition: all 2s ease-in;
+
+  .wave {
+    transform: rotate(180deg);
+    transition: all 2s ease-in;
+  }
+
+  #wave1 {
+    background: url(../../img/waveRed.png) repeat-x;
+    width: 100%;
+    height: 100%;
+    background-size: 3000px 100px;
+    z-index: 10;
+
     position: absolute;
-    top: 4rem;
-    left: 4rem;
-    width: 10rem;
-    & .logo {
-      width: 100%;
-      z-index: 100;
+    bottom: -18%;
+    left: 0;
+  }
+
+  #wave2 {
+    background: url(../../img/waveYellow.png) repeat-x;
+    width: 100%;
+    height: 100%;
+    background-size: 2000px 100px;
+    z-index: 8;
+
+    position: absolute;
+    bottom: -19%;
+    left: 0;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__brandLogo {
+    & > h2 {
+      font-size: 4rem;
+      color: #fff;
     }
+  }
+
+  &__linkBox {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    transform: translateY(-450px);
+
+    transition: all 1s ease-in;
+  }
+
+  &__item {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__link {
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 2.4rem;
+  }
+
+  &__btn {
+    // margin-top: 1rem;
+    background-color: blue;
+    font-size: 2.4rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    & > a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      z-index: 1000;
+
+      transform: translateX(200px);
+
+      transition: all 1.5s ease-in;
+    }
+  }
+}
+
+@keyframes moveFromTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: 400px;
+  }
+
+  150% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+
+  100% {
+    background-position-x: -400px;
+    // visibility: hidden;
+    // opacity: 0;
+  }
+  150% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1920px;
   }
 }
