@@ -6,6 +6,7 @@ const Nav = (props) => {
 
   useEffect(() => {
     if (isScrolled === true) {
+      console.log('true');
       return;
     }
 
@@ -21,6 +22,7 @@ const Nav = (props) => {
 
       nav.style.height = 70 + 'px';
       nav.style.paddingTop = 0 + 'px';
+      // nav.style.position = 'fixed';
       wave[0].style.height = 0 + 'px';
       wave[1].style.height = 0 + 'px';
 
@@ -29,21 +31,24 @@ const Nav = (props) => {
       // wave[0].style.bottom = 0;
       // wave[1].style.bottom = 0;
       links.style.transform = `translateY(0px)`;
-      btnText.style.transform = `translatex(0px)`;
 
       setTimeout(() => {
         wave[0].style.animation = 'none';
         wave[1].style.animation = 'none';
-        // wave[0].style.height = 0 + 'px';
-        // wave[1].style.height = 0 + 'px';
-        // myRef.current.scrollIntoView = 'none';
+        nav.style.position = 'fixed'
       }, 2000);
+
+      setTimeout(() => {
+        btnText.style.transform = `translatex(0px)`;
+      }, 1000);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () =>
       setTimeout(() => {
         window.removeEventListener('scroll', handleScroll);
-      }, 2000);
+        console.log('scroll off');
+      }, 1000);
   }, [isScrolled]);
 
   return (
