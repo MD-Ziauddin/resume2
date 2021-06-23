@@ -22,7 +22,7 @@ const Nav = (props) => {
     wave[0].style.height = 100 + 'px';
     wave[1].style.height = 100 + 'px';
 
-    wave[0].style.animation = `animate 2s linear infinite`;
+    wave[0].style.animation = `animate 3s linear infinite`;
     wave[0].style.animationDirection = 'reverse';
     wave[1].style.animation = `animate2 2s linear infinite`;
     wave[1].style.animationDirection = 'reverse';
@@ -52,7 +52,7 @@ const Nav = (props) => {
     wave[0].style.height = 0 + 'px';
     wave[1].style.height = 0 + 'px';
 
-    wave[0].style.animation = `animate 2s linear infinite`;
+    wave[0].style.animation = `animate 3s  ease-out infinite`;
     wave[1].style.animation = `animate2 2s linear infinite`;
     // wave[0].style.bottom = 0;
     // wave[1].style.bottom = 0;

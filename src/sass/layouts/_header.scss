@@ -1,6 +1,4 @@
 .header {
-  margin-top: 0px;
-
   transition: all 1.5s ease-in;
 
   background-image: linear-gradient(
@@ -38,11 +36,13 @@
 @keyframes margintTopAnima {
   0% {
     margin-top: 0;
+    transform: translateY(0);
   }
   50% {
-    margin-top: 35px;
+    // margin-top: -35px;
   }
   100% {
-    margin-top: 70px;
+    // margin-top: -170px;
+    transform: translateY(-170px);
   }
 }

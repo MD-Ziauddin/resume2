@@ -13,19 +13,21 @@
   transition: all 2s ease-in;
 
   .wave {
-    transform: rotate(180deg);
+    // transform: rotate(180deg);
     transition: all 2s ease-in;
   }
 
   #wave1 {
-    background: url(../../img/waveRed.png) repeat-x;
+    background: url(../../img/wave4.png) repeat-x;
     width: 100%;
     height: 100%;
-    background-size: 4000px 100px;
+    background-size: 2000px 100px;
     z-index: 10;
 
+    // transform: rotate(360deg);
+
     position: absolute;
-    bottom: -42%;
+    bottom: -44%;
     left: 0;
   }
 
@@ -34,10 +36,12 @@
     width: 100%;
     height: 100%;
     background-size: 2000px 100px;
-    z-index: 8;
+    z-index: -8;
+
+    transform: rotate(180deg);
 
     position: absolute;
-    bottom: -42%;
+    bottom: -49%;
     left: 0;
   }
 
@@ -58,6 +62,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    z-index: 100;
 
     transform: translateY(-450px);
 
@@ -76,6 +81,7 @@
     color: #fff;
     padding: 1rem 0;
     font-size: 2.4rem;
+    z-index: 100;
   }
 
   &__btn {
@@ -109,41 +115,51 @@
 
 @keyframes animate {
   0% {
-    background-position-x: 0;
+    // background-position-x: 0;
+    transform: translateY(0);
   }
 
   100% {
-    background-position-x: 400px;
-    opacity: 0.5;
+    // background-position-x: 200px;
+    transform: translateY(-70px);
+    // opacity: 0;
+    // visibility: hidden;
   }
 
-  150% {
-    visibility: hidden;
-    opacity: 0;
-  }
+  // 150% {
+  //   visibility: hidden;
+  //   opacity: 0;
+  // }
 }
 
 @keyframes animate2 {
   0% {
     background-position-x: 0;
+    transform: translateY(0) rotate(180deg);
   }
 
   100% {
-    background-position-x: -200px;
-    // visibility: hidden;
-    opacity: 0.5;
-  }
-  150% {
+    background-position-x: -800px;
+    transform: translateY(-50px) rotate(180deg);
     visibility: hidden;
     opacity: 0;
   }
+  // 150% {
+  //   visibility: hidden;
+  //   opacity: 0;
+  // }
 }
 
 @keyframes wave {
   0% {
-    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-    margin-left: -1920px;
+    // margin-top: 1920px;
+    transform: translateY(-100%);
+    // opacity: 0;
+    // visibility: hidden;
   }
 }
