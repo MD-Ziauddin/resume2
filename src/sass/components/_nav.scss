@@ -5,7 +5,7 @@
   z-index: 10;
   background-color: red;
   width: 100%;
-  height: 450px;
+  height: 150px;
   //   overflow: hidden;
 
   padding-top: 10rem;
@@ -25,7 +25,7 @@
     z-index: 10;
 
     position: absolute;
-    bottom: -18%;
+    bottom: -42%;
     left: 0;
   }
 
@@ -37,7 +37,7 @@
     z-index: 8;
 
     position: absolute;
-    bottom: -19%;
+    bottom: -42%;
     left: 0;
   }
 
@@ -46,6 +46,7 @@
   align-items: center;
 
   &__brandLogo {
+    z-index: 100;
     & > h2 {
       font-size: 4rem;
       color: #fff;
@@ -113,6 +114,7 @@
 
   100% {
     background-position-x: 400px;
+    opacity: 0.5;
   }
 
   150% {
@@ -129,7 +131,7 @@
   100% {
     background-position-x: -200px;
     // visibility: hidden;
-    // opacity: 0;
+    opacity: 0.5;
   }
   150% {
     visibility: hidden;

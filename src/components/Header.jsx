@@ -1,31 +1,87 @@
 import React, { useEffect, useState } from 'react';
 
+import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+
 import logo from '../img/logo-black.png';
 import profilePic from '../img/photo.jpg';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    if (isScrolled === true) {
-      return;
-    }
+  // const handleScrollDown = (event) => {
+  //   const header = document.querySelector('.header');
 
-    const handleScroll = (event) => {
-      const header = document.querySelector('.header');
+  //   setIsScrolled(true);
 
-      console.log('scroll');
-      setIsScrolled(true);
-      setTimeout(() => {
-        header.style.marginTop = 0 + 'px';
-      }, 0);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () =>
-      setTimeout(() => {
-        window.removeEventListener('scroll', handleScroll);
-      }, 2000);
-  }, [isScrolled]);
+  //   header.style.marginTop = -140 + 'px';
+
+  //   setTimeout(() => {
+  //     header.style.marginTop = 70 + 'px';
+  //   }, 1000);
+  // };
+
+  // const handleScrollUp = (event) => {
+  //   const handleScrollDown = (event) => {
+  //     const header = document.querySelector('.header');
+
+  //     setIsScrolled(true);
+
+  //     setTimeout(() => {
+  //       header.style.animatione = `margintTopAnima 2s linear`;
+  //       header.style.animationDirection = 'reverse';
+  //     }, 0);
+  //   };
+  // };
+
+  // useScrollPosition(
+  //   ({ prevPos, currPos }) => {
+  //     if (Math.abs(prevPos.y) <= 0 && isScrolled === false) {
+  //       window.addEventListener('scroll', handleScrollDown);
+  //       setIsScrolled(true);
+  //       console.log('down');
+  //       setTimeout(() => {
+  //         window.removeEventListener('scroll', handleScrollDown);
+  //       }, 1000);
+  //     } else if (
+  //       Math.abs(currPos.y) <= 100 &&
+  //       Math.abs(prevPos.y) > Math.abs(currPos.y) &&
+  //       isScrolled === true
+  //     ) {
+  //       window.addEventListener('scroll', handleScrollUp);
+  //       console.log('down');
+  //       setTimeout(() => {
+  //         window.removeEventListener('scroll', handleScrollUp);
+  //       }, 1000);
+  //     }
+
+  //     // if (Math.abs(currPos.y) >= 100) {
+  //     //   console.log('IsScroll up false');
+  //     //   setIsScrolledUp(false);
+  //     // }
+  //     console.log(isScrolled);
+  //   },
+  //   [isScrolled]
+  // );
+
+  // useEffect(() => {
+  //   if (isScrolled === true) {
+  //     return;
+  //   }
+
+  //   const handleScroll = (event) => {
+  //     const header = document.querySelector('.header');
+
+  //     console.log('scroll');
+  //     setIsScrolled(true);
+  //     header.style.marginTop = 70 + 'px';
+  //     setTimeout(() => {}, 0);
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () =>
+  //     setTimeout(() => {
+  //       window.removeEventListener('scroll', handleScroll);
+  //     }, 2000);
+  // }, [isScrolled]);
 
   return (
     <header className='header'>
