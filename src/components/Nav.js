@@ -19,12 +19,12 @@ const Nav = (props) => {
     nav.style.height = 150 + 'px';
     nav.style.paddingTop = 0 + 'px';
     // nav.style.position = 'fixed';
-    wave[0].style.height = 100 + 'px';
-    wave[1].style.height = 100 + 'px';
+    wave[0].style.height = 100 + '%';
+    wave[1].style.height = 100 + '%';
 
-    wave[0].style.animation = `animate 3s linear infinite`;
+    wave[0].style.animation = `animate 3s ease-out`;
     wave[0].style.animationDirection = 'reverse';
-    wave[1].style.animation = `animate2 2s linear infinite`;
+    wave[1].style.animation = `animate2 2s ease-out`;
     wave[1].style.animationDirection = 'reverse';
 
     setTimeout(() => {
@@ -52,8 +52,8 @@ const Nav = (props) => {
     wave[0].style.height = 0 + 'px';
     wave[1].style.height = 0 + 'px';
 
-    wave[0].style.animation = `animate 3s  ease-out infinite`;
-    wave[1].style.animation = `animate2 2s linear infinite`;
+    wave[0].style.animation = `animate 3s  ease-out`;
+    wave[1].style.animation = `animate2 2s ease-out`;
     // wave[0].style.bottom = 0;
     // wave[1].style.bottom = 0;
     links.style.transform = `translateY(0px)`;
@@ -62,11 +62,11 @@ const Nav = (props) => {
       wave[0].style.animation = 'none';
       wave[1].style.animation = 'none';
       nav.style.position = 'sticky';
-    }, 2000);
+    }, 3000);
 
     setTimeout(() => {
       btnText.style.transform = `translatex(0px)`;
-    }, 1000);
+    }, 500);
   };
 
   useScrollPosition(
@@ -88,7 +88,7 @@ const Nav = (props) => {
         console.log('down');
         setTimeout(() => {
           window.removeEventListener('scroll', handleScrollUp);
-        }, 1000);
+        }, 3000);
       }
 
       if (Math.abs(currPos.y) >= 100) {
